@@ -1,0 +1,581 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #0c1013;
+  background: #ffffff;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.nav {
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo a {
+  color: #433024;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+/* Desktop Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  margin-left: 40px;
+  color: #433024;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #ff99d8;
+}
+
+/* Hamburger Icon (hidden on desktop) */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  color: #433024;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* Checkbox hidden */
+.nav-toggle {
+  display: none;
+}
+
+/* Mobile Dropdown */
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  flex-direction: column;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  border-top: 1px solid #ffe6f5;
+}
+
+.mobile-menu a {
+  padding: 15px 30px;
+  color: #433024;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid #f0f0f0;
+  transition: 0.3s;
+}
+
+.mobile-menu a:hover,
+.mobile-menu a.active {
+  background: #fff5fa;
+  color: #ff99d8;
+  padding-left: 40px;
+}
+
+/* Responsive - Mobile View */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; 
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-toggle:checked ~ .mobile-menu {
+    display: flex;
+  }
+
+  .logo a {
+    font-size: 1.5rem;
+  }
+
+  .nav-container {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo a {
+    font-size: 1.4rem;
+  }
+
+  .hamburger {
+    font-size: 1.6rem;
+  }
+
+  .mobile-menu a {
+    padding: 18px 25px;
+    font-size: 1rem;
+  }
+}
+
+    /* Main Page */
+    .experience-page {
+      padding: 40px 100px;
+    }
+
+    .experience-page h1 {
+      font-size: 4.5rem;
+      color: #433024;
+      margin-bottom: 50px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    /* Sections */
+    .section {
+      margin-bottom: 100px;
+    }
+
+    .section h2 {
+      font-size: 2.2rem;
+      color: #433024;
+      margin-bottom: 5px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section h2 i {
+      color: #ff99d8;
+      font-size: 1.8rem;
+    }
+
+    .section-subtitle {
+      color: #666;
+      font-size: 1.1rem;
+      margin-bottom: 40px;
+      font-weight: 400;
+    }
+
+    .industry-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    .experience-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 15px 40px rgba(255, 153, 216, 0.15);
+      transition: all 0.4s ease;
+    }
+
+    .experience-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 25px;
+      margin-bottom: 30px;
+      padding-bottom: 25px;
+      border-bottom: 2px solid #fff5fa;
+    }
+
+    .company-logo {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, #ff99d8, #ff66c4);
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2.2rem;
+      flex-shrink: 0;
+    }
+
+    .company-info h3 {
+      font-size: 1.8rem;
+      color: #433024;
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+
+    .company-info h4 {
+      font-size: 1.4rem;
+      color: #ff99d8;
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+
+    .experience-duration {
+      color: #666;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .experience-duration i {
+      color: #ff99d8;
+    }
+
+    .experience-details h5 {
+      font-size: 1.3rem;
+      color: #433024;
+      margin: 25px 0 15px;
+      font-weight: 600;
+    }
+
+    .responsibilities-list {
+      list-style: none;
+      margin-bottom: 30px;
+    }
+
+    .responsibilities-list li {
+      padding: 10px 0;
+      color: #555;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 1.05rem;
+    }
+
+    .responsibilities-list i {
+      color: #ff99d8;
+      margin-top: 3px;
+      flex-shrink: 0;
+    }
+
+    .skills-gained {
+      background: #fff5fa;
+      padding: 10px;
+      border-left: 3px solid #ff99d8;
+    }
+
+    .skills-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 5px;
+    }
+
+    .skill-tag {
+      background: white;
+      color: #433024;
+      padding: 4px 14px;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      border: 1px solid #ff99d8;
+    }
+
+    /* Projects Section */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 30px;
+    }
+
+    .project-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 30px 20px;
+      box-shadow: 0 15px 40px rgba(255, 153, 216, 0.15);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .project-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      border-radius: 20px 20px 0 0;
+    }
+
+    .project-icon {
+      width: 70px;
+      height: 70px;
+      background: linear-gradient(135deg, #ff99d8, #ff66c4);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 25px;
+      color: white;
+      font-size: 1.8rem;
+    }
+
+    .project-card h3 {
+      font-size: 1.6rem;
+      color: #433024;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    .project-card p {
+      color: #555;
+      margin-bottom: 20px;
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    .tech-stack {
+      background: #fff5fa;
+      padding: 12px 20px;
+      border-left: 3px solid #ff99d8;
+      margin: 25px 0 !important;
+      font-size: 0.95rem !important;
+    }
+
+    .project-links {
+      margin-top: 25px;
+    }
+
+    .btn-small {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #433024;
+      color: white;
+      padding: 9px 14px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+    }
+
+    .btn-small:hover {
+      background: transparent;
+      color: #433024;
+      transform: translateY(-3px);
+    }
+
+  footer {
+  text-align: center;
+  padding: 20px;
+  color: #433024;
+  background: #fff9fd;
+  border-top: 1px solid #ffd9f0;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+    /* Responsive */
+    @media (max-width: 968px) {
+      .experience-page {
+        padding: 60px 20px 80px;
+      }
+
+      .experience-page h1 {
+        font-size: 3.5rem;
+      }
+
+      .projects-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 0 auto;
+      }
+
+      .section h2 {
+        font-size: 1.8rem;
+      }
+
+      .experience-header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .company-logo {
+        margin: 0 auto;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .experience-page h1 {
+        font-size: 2.8rem;
+      }
+
+      .section h2 {
+        font-size: 1.6rem;
+      }
+
+      .project-card,
+      .experience-card {
+        padding: 25px 20px;
+      }
+
+      .container {
+        padding: 0 20px;
+      }
+
+      .skills-tags {
+        justify-content: center;
+      }
+    }
+
+    .canva-section {
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .canva-card {
+      background-color: #ffffff;
+      border-radius: 20px;
+      padding: 40px;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      box-shadow: 0 10px 30px rgba(255, 153, 216, 0.2);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .canva-icon {
+      flex-shrink: 0;
+      width: 80px;
+      height: 80px;
+      background: white;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ff66c4;
+      font-size: 2.5rem;
+      box-shadow: 0 5px 15px rgba(255, 102, 196, 0.2);
+    }
+
+    .canva-content {
+      text-align: left;
+      flex: 1;
+    }
+
+    .canva-content h3 {
+      font-size: 1.8rem;
+      color: #433024;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .canva-content p {
+      color: #666;
+      margin-bottom: 20px;
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+
+    .canva-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: #433024;
+      color: white;
+      padding: 16px 32px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .canva-btn:hover {
+      background: #ffffff;
+      color: #433024;
+      box-shadow: 0 10px 25px rgba(65, 27, 50, 0.3);
+    }
+
+    .canva-btn:hover::before {
+      left: 100%;
+    }
+
+    .canva-btn .fa-arrow-right {
+      transition: transform 0.3s ease;
+    }
+
+    .canva-btn:hover .fa-arrow-right {
+      transform: translateX(5px);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .canva-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 25px;
+        gap: 20px;
+      }
+
+      .canva-content {
+        text-align: center;
+      }
+
+      .canva-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 2rem;
+      }
+
+      .canva-content h3 {
+        font-size: 1.6rem;
+      }
+
+      .canva-btn {
+        padding: 14px 28px;
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .canva-card {
+        padding: 25px 20px;
+      }
+
+      .canva-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.8rem;
+      }
+
+      .canva-content h3 {
+        font-size: 1.4rem;
+      }
+
+      .canva-btn {
+        width: 100%;
+        justify-content: center;
+      }
+    }
