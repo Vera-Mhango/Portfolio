@@ -143,10 +143,6 @@ body {
   }
 }
 
-.about-hero {
-  padding: 35px 0;
-}
-
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1.4fr;
@@ -234,11 +230,7 @@ body {
   }
 
   .about-photo img {
-    max-width: 200px;
-    max-height: 180px;
-    border-radius: 50%;
-    margin: 0 auto;
-    display: block;
+    display: none;
   }
 
   .about-text h1 {
@@ -270,16 +262,13 @@ body {
       transition: all 0.3s ease;
     }
 
-    .skills-summary {
-  background: #fff9fd;
-  border-radius: 16px;
-  padding: 40px;
-  margin-top: 60px;
-  border: 1px solid #ffe6f5;
+.skills-summary {
+  padding: 20px;
+  margin-top: 40px;
 }
 
 .skills-summary h2 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: #433024;
   margin-bottom: 10px;
   font-weight: 600;
@@ -312,7 +301,7 @@ body {
 }
 
 .skill-category h3 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #433024;
   margin-bottom: 20px;
   font-weight: 600;
@@ -336,7 +325,7 @@ body {
   color: #433024;
   padding: 8px 16px;
   border-radius: 20px;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   font-weight: 500;
   border: 1px solid #ffd9f0;
   transition: all 0.2s ease;

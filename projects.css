@@ -207,15 +207,15 @@ body {
     }
 
     .company-logo {
-      width: 80px;
-      height: 80px;
+      width: 60px;
+      height: 60px;
       background: linear-gradient(135deg, #ff99d8, #ff66c4);
       border-radius: 20px;
       display: flex;
       align-items: center;
       justify-content: center;
       color: white;
-      font-size: 2.2rem;
+      font-size: 1.7rem;
       flex-shrink: 0;
     }
 
@@ -246,7 +246,7 @@ body {
     }
 
     .experience-details h5 {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       color: #433024;
       margin: 25px 0 15px;
       font-weight: 600;
@@ -263,7 +263,7 @@ body {
       display: flex;
       align-items: flex-start;
       gap: 12px;
-      font-size: 1.05rem;
+      font-size: 0.9rem;
     }
 
     .responsibilities-list i {
@@ -288,11 +288,11 @@ body {
     .skill-tag {
       background: white;
       color: #433024;
-      padding: 4px 14px;
+      padding: 3px 13px;
       border-radius: 50px;
       font-size: 0.8rem;
       font-weight: 500;
-      border: 1px solid #ff99d8;
+      border: 0.8px solid #ff99d8;
     }
 
     /* Projects Section */
@@ -322,8 +322,8 @@ body {
     }
 
     .project-icon {
-      width: 70px;
-      height: 70px;
+      width: 50px;
+      height: 50px;
       background: linear-gradient(135deg, #ff99d8, #ff66c4);
       border-radius: 50%;
       display: flex;
@@ -331,7 +331,7 @@ body {
       justify-content: center;
       margin-bottom: 25px;
       color: white;
-      font-size: 1.8rem;
+      font-size: 1rem;
     }
 
     .project-card h3 {
@@ -344,7 +344,7 @@ body {
     .project-card p {
       color: #555;
       margin-bottom: 20px;
-      font-size: 1.05rem;
+      font-size: 0.8rem;
       line-height: 1.7;
     }
 
@@ -353,7 +353,7 @@ body {
       padding: 12px 20px;
       border-left: 3px solid #ff99d8;
       margin: 25px 0 !important;
-      font-size: 0.95rem !important;
+      font-size: 0.7rem !important;
     }
 
     .project-links {
@@ -370,7 +370,7 @@ body {
       border-radius: 50px;
       text-decoration: none;
       font-weight: 600;
-      font-size: 1rem;
+      font-size: 0.8rem;
       transition: all 0.3s ease;
       border: 2px solid transparent;
     }
@@ -378,7 +378,6 @@ body {
     .btn-small:hover {
       background: transparent;
       color: #433024;
-      transform: translateY(-3px);
     }
 
   footer {
